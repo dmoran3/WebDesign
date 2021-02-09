@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Journeyman Fitness is a personal trainer who can help you lose fat, build muscle, become healthier, and everything in between!">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="/Journeyman_Icon.JPG">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Journeyman Fitness is a personal trainer who can help you lose fat, build muscle, 
+        become healthier, and everything in between!"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="icon" href="/images/Journeyman_Icon.JPG"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap" 
+        rel="stylesheet"
+    />
 
     <title>Journeyman Fitness</title>
 </head>
 <body>
-    <p>STINKY MOUSTACHE? Tell us about it.</p>
-        <form>
-            <label for="email">email</label>
-            <input type="email" id="email"/>
-        </form>
-    </p>
+    <main>
+        <section class="landing">
+            <nav>
+                <h1 id="logo">Journeyman Fitness</h1>
+                <ul class="nav-links">
+                    <li><a href="/index.html" style="color:white; text-decoration: none;">Home</a></li>
+                    <li><a href="/contact.html" style="color:white; text-decoration: none;">Contact</a></li>
+                    <li><a href="/about.html" style="color:white; text-decoration: none;">About</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class = "contact-form">
+            <p>Ready to start your fitness journey?<br>
+                Email us or schedule a start-up session today!</p>
+            </p>
+            <div class="contact-container">
+                <div class="row">
+                    <div class="column">
+                        <img src="/images/JourneymanLogo.png" style="width:100%; border-radius: 10px;">
+                    </div>
+                    <div class="column">
+                        <form action="/action_page.php">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email" placeholder="Your">
+                            <label for="interest">Primary Interest</label>
+                            <select id="interest" name="interest">
+                            <option value="strength">Strength Training</option>
+                            <option value="weight_loss">Weight Loss</option>
+                            <option value="health">General Health</option>
+                            <option value="other">Other(Tell us about it below)</option>
+                            </select>
+                            <label for="message">Anything else we should know?</label>
+                            <textarea id="subject" name="subject" placeholder="PLACEHOLDER TEXT" style="height:10vh">
+                            </textarea>
+                            <input type="submit" value="Sumbit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

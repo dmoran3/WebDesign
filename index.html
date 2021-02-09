@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Journeyman Fitness is a personal trainer who can help you lose fat, build muscle, become healthier, and everything in between!"/>
     <meta name="robots" content="index, follow"/>
-    <link rel="icon" href="/Journeyman_Icon.JPG"/>
+    <link rel="icon" href="/images/Journeyman_Icon.JPG"/>
     <link rel="stylesheet" href="/style.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link 
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap" 
         rel="stylesheet"
@@ -21,34 +20,56 @@
             <nav>
                 <h1 id="logo">Journeyman Fitness</h1>
                 <ul class="nav-links">
-                    <li>Home</li>
-                    <li>Contact</li>
-                    <li>About</li>
+                    <li><a href="/index.html" style="color:white; text-decoration: none;">Home</a></li>
+                    <li><a href="/contact.html" style="color:white; text-decoration: none;">Contact</a></li>
+                    <li><a href="/about.html" style="color:white; text-decoration: none;">About</a></li>
                 </ul>
             </nav>
-            <h2 class="big-text">Do it strong.</h2>
+
         </section>
+        <div class="home-text">
+            <h2 class="big-text">Do it strong</h2>
+            <h4 class="small-text">Fitness is a craft that we hone, like any other skill. If you've found success
+                doing anything at all, you've found that in the beginning you had a lot to learn, and today, you
+                continue to learn and sharpen your craft. Just as a masterpiece isn't created by an apprentice,
+                strength and a good physique does not come overnight. Though we may choose our job, we do not
+                choose our body: it is our duty to learn it. Apprentice or "Journeyman," I give you the tools
+                to start or continue living a fitness lifestyle with professional programming and nutritional
+                guidance. No investment grants more tangible and important returns than the investment you make
+                in the body you live in, every single day. Become the student to your own body, <br><span style=
+                "font-weight:bolder; font-size: 1.5em;">become a Journeyman.</span></h4>
+        </div>
+        <div class="social-bar">
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/jim_ogradles/?hl=en" target="_blank"><img src="/images/InstagramBlack.png" style="width:3vh; height:3vh;"></img></a></li>
+                <li><a href="#" target="_blank"><img src="/images/FacebookBlack.png" style="width:3vh; height:3vh;"></img></a></li>
+                <li><a href="#" target="_blank"><img src="/images/TwitterBlack.png" style="width:3vh; height:3vh;"></img></a></li>
+            </ul>
+        </div>
     </main>
     <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
-                <span class="text">Whatever you do...</span>
+                <span class="text">Whatever you do</span>
             </h1>
             <h1 class="hide">
                 <span class="text">Do it strong.</span>
             </h1>
-            <h1 class="hide">
-                <span class="text">people.</span>
-            </h1>
         </div>
     </div>
+
+
     <div class="slider"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
     <script src="./app.js"></script>
+
+
 </body>
 </html>
 
